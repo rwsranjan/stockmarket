@@ -1,0 +1,58 @@
+/* Overlay for the popup */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  background: white;
+  padding: 0px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.8s ease-in-out; /* Animation for sliding */
+}
+
+/* Close button */
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 44px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Keyframes for slide-down animation */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%); /* Start from off-screen */
+  }
+  100% {
+    transform: translateY(0); /* End at original position */
+  }
+}
+
+/* Optional: Style for the image */
+.animatedImage {
+  width: 800px;
+  height: 400px;
+}
+
+@media only screen and (max-width: 768px) {
+  .animatedImage{
+    width: 100%;
+    height: auto;
+  }
+}
+

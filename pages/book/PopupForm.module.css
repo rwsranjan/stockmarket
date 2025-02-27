@@ -1,0 +1,90 @@
+/* styles/PopupForm.module.css */
+.popup {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: top 0.5s ease-out;
+    z-index: 1000;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .visible {
+    top: 0;
+  }
+  .topForm{
+display: flex;
+justify-content: space-between;
+
+  }
+  .popupContent {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    max-width: 605px;
+    margin: 20px auto;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: #e35728;
+    color: #fff;
+    padding: 5px 11px;
+    border-radius: 5px;
+    /* margin-bottom: 22px; */
+    font-weight: 600;
+  }
+  
+  .title {
+    font-weight: 600;
+    color: #034854;
+    font-size: 23px;
+  }
+  
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formLabel {
+    margin-bottom: 5px;
+  }
+  
+  .formInput {
+    border: 1px solid #e35728;
+    box-shadow: rgba(252, 174, 72, 0.2) 0px 2px 8px 0px;
+    width: 100%;
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin: 12px 0px 0px 0px;
+  }
+  
+
+ /* input{
+  border: 1px solid #e35728;
+  width: 100%;
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin: 12px 0px 12px 0px;
+} */
+  @media (max-width: 768px) {
+    .popupContent {
+        background: white;
+        padding: 20px;
+        max-width: 353px;
+        margin: 20px auto;
+        border-radius: 8px;
+        position: relative;
+      }
+  }
