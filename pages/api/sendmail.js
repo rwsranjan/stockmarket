@@ -16,8 +16,8 @@ export default async function handler(req, res) {
             port: 587, // Use 587 for TLS or 25 for non-encrypted connections
             secure: false, // Set to true if using SSL (for port 465)
             auth: {
-                user: 'info@stockbrain.in',
-                pass: '=gn=Uq4R_4$l',
+                user: '',
+                pass: '',
             },
             tls: {
                 rejectUnauthorized: false, // For self-signed certificates
