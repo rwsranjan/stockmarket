@@ -37,8 +37,8 @@ export default async function handler(req, res) {
             port: parseInt(process.env.SMTP_PORT) || 587,
             secure: false, // Use TLS
             auth: {
-                user: process.env.SMTP_USER || "info@stockbrain.in",
-                pass: process.env.SMTP_PASS || "=gn=Uq4R_4$l",
+                user: process.env.SMTP_USER || "",
+                pass: process.env.SMTP_PASS || "",
             },
             tls: {
                 rejectUnauthorized: false, // Use this if you have a self-signed certificate
