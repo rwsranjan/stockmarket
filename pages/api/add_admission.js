@@ -120,7 +120,7 @@ const sendInvoiceEmail = async (email, invoicePath, studentData) => {
         host: 'mail.stockbrain.in',
         port: 587,
         secure: false,
-        auth: { user: 'info@stockbrain.in', pass: '=gn=Uq4R_4$l' },
+        auth: { user: '', pass: '' },
         tls: { rejectUnauthorized: false },
     });
 
